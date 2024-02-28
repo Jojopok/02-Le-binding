@@ -1,0 +1,10 @@
+<p>user-profile works!</p>
+<div>
+    <img [src]="user.photo" alt="Photo de l'utilisateur">
+    <p> Citation : {{user.quote}}</p>
+    <p>Nom :  {{user.firstName}}</p>
+    <p>Prénom : {{user.name}}</p>
+    <p [hidden]= "ageVisible">Age : {{user.age}} ans</p>
+    <button (click)="toggleAgeVisibility()">Toggle Age</button>
+    <input type="text" [(ngModel)]="user.quote">
+  </div>
