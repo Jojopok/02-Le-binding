@@ -23,5 +23,6 @@ export class UserProfileComponent {
   toggleAgeVisibility() {
     this.ageVisible = !this.ageVisible;
   }
+  
 }
 
